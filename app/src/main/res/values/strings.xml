@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Players</string>
+
+    <string name="login_hint_username">Username</string>
+    <string name="login_hint_password">Password</string>
+    <string name="btn_login">Login</string>
+
+    <string name="player_name">Player Name</string>
+    <string name="player_position">Player Position</string>
+    <string name="add_player">Add Player</string>
+
+    <string name="manage_players">Manage Players</string>
+
+    <string name="register_username">Username</string>
+    <string name="register_password">Password</string>
+    <string name="register_usertype">User Type</string>
+    <string name="btn_register">Register</string>
+
+    <string-array name="roles_array">
+        <item>admin</item>
+        <item>user</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+
+</resources>

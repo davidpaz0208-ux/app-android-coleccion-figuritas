@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="4dp"
+        android:text="Último mensaje a las: 00:00"
+        android:textColorHint="#FFFFFF"/>
+
+    <ListView
+        android:id="@+id/listViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="24sp"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Escribe tu mensaje..."
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Enviar"
+        android:textSize="22sp"
+        android:layout_marginTop="36sp"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/btnClearChatHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Borrar historial"
+        android:textSize="22sp"
+        android:layout_marginTop="36sp"
+        android:visibility="gone"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Volver"
+        android:textSize="22sp"
+        android:layout_marginTop="36sp"
+        android:background="@drawable/button_background" />
+
+</LinearLayout>
+
+

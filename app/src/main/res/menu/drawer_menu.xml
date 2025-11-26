@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_view_players"
+        android:title="Ver Jugadores" />
+
+    <item
+        android:id="@+id/nav_add_player"
+        android:title="Agregar Jugador" />
+
+    <item
+        android:id="@+id/nav_update_position"
+        android:title="Actualizar Posición" />
+
+    <item
+        android:id="@+id/nav_edit_player_name"
+        android:title="Editar Nombre Jugador" />
+
+    <item
+        android:id="@+id/nav_delete_player"
+        android:title="Eliminar Jugador" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/nav_manage_users"
+        android:title="Gestionar Usuarios" />
+
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Cerrar Sesión" />
+
+</menu>
+

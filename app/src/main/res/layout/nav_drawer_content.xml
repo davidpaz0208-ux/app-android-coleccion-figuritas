@@ -1,0 +1,118 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigation_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="?attr/colorPrimaryDark"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnViewPlayers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver jugadores"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar jugador"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnUpdatePlayerPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar posición jugador"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnEditPlayerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar nombre jugador"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnDeletePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar jugador"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnManageUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestionar usuarios"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar sesión"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
