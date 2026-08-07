@@ -1,0 +1,84 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#0B1F3A"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚽ Álbum Mundial 2026"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/tvBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💰 $0"
+        android:textColor="#FFD700"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Álbum completado: 0%"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="6dp"/>
+
+    <Button
+        android:id="@+id/btnOpenPack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Sobre 🎁"
+        android:layout_margin="10dp"
+        android:background="#1E88E5"
+        android:textColor="#FFFFFF"/>
+
+    <ListView
+        android:id="@+id/listViewStickers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="#FFD700"
+        android:background="#1E88E5"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:background="#FF4444"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+</LinearLayout>
+
+
+

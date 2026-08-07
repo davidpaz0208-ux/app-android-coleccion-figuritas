@@ -10,17 +10,41 @@
         android:id="@+id/adminWelcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome, Admin!"
+        android:text="Panel Administrador"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnManageStickers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestionar Figuritas"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
 
     <Button
         android:id="@+id/btnViewUsers"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View All Users"
+        android:text="Ver Usuarios"
         android:textColor="#FFFFFF"
-        android:onClick="viewUsers"/>
+        android:layout_marginBottom="12dp"/>
 
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:textColor="#FFFFFF"/>
 </LinearLayout>
 

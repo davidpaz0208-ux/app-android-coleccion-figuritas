@@ -1,71 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:usesCleartextTraffic="true"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
+        android:enableOnBackInvokedCallback="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:targetApi="31">
-        <activity
-            android:name=".SendMessageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Message"
-            android:exported="false" />
-        <activity
-            android:name=".AdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".EditPlayerNameActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UserManagementActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PlayerStats"
-            android:exported="false" />
-        <activity android:name=".PlayerStatsActivity" />
-        <activity
-            android:name=".DeletePlayerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UpdatePlayerPositionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AddPlayerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SearchPlayerActivity"
-            android:exported="false" />
-        <activity android:name=".PlayersListActivity" />
+        android:theme="@style/Theme.Stickers">
+
+        <activity android:name=".MainActivity" android:exported="true" />
+
         <activity
             android:name=".LoginActivity"
-            android:exported="true"
-            android:label="@string/app_name">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Players" />
+
+        <activity android:name=".DeleteStickerActivity" android:exported="false" />
+        <activity android:name=".UpdateStickerActivity" android:exported="false" />
+        <activity android:name=".StickerListActivity" android:exported="false" />
+        <activity android:name=".StickerStatsActivity" android:exported="false" />
+        <activity android:name=".ChatActivity" android:exported="false" />
+        <activity android:name=".UserManagementActivity" android:exported="false" />
+        <activity android:name=".AdminActivity" android:exported="false" />
+        <activity android:name=".AlbumActivity" />
+        <activity android:name=".Message" android:exported="false" />
+        <activity android:name=".ManageStickersActivity" />
+        <activity android:name=".PackOpeningActivity"/>
+        <activity android:name=".SendMessageActivity" android:exported="false" />
+        <activity android:name=".TeamAlbumActivity"/>
+        <activity android:name=".RepeatedStickersActivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".TradeRequestsActivity"/>
+        <activity android:name=".FilterByRarityActivity"/>
+
     </application>
 
 </manifest>

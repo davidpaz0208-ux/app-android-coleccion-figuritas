@@ -2,37 +2,43 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_view_players"
-        android:title="Ver Jugadores" />
+        android:id="@+id/nav_market"
+        android:title="Mercado de Figuritas"
+        android:icon="@android:drawable/ic_menu_agenda" />
 
     <item
-        android:id="@+id/nav_add_player"
-        android:title="Agregar Jugador" />
+        android:id="@+id/nav_filter_rarity"
+        android:title="Filtrar por Rareza"
+        android:icon="@drawable/ic_search"/>
 
     <item
-        android:id="@+id/nav_update_position"
-        android:title="Actualizar Posición" />
+        android:id="@+id/nav_trades"
+        android:title="Intercambios"
+        android:icon="@drawable/swap_horiz" />
 
     <item
-        android:id="@+id/nav_edit_player_name"
-        android:title="Editar Nombre Jugador" />
+        android:id="@+id/nav_edit_sticker"
+        android:title="Editar Figuritas"
+        android:icon="@android:drawable/ic_menu_edit" />
 
     <item
-        android:id="@+id/nav_delete_player"
-        android:title="Eliminar Jugador" />
+        android:id="@+id/nav_delete_sticker"
+        android:title="Administrar Figuritas"
+        android:icon="@android:drawable/ic_menu_manage" />
 
     <item
         android:id="@+id/nav_chat"
-        android:title="Chat" />
+        android:title="Chat"
+        android:icon="@drawable/baseline_chat_24" />
 
     <item
         android:id="@+id/nav_manage_users"
-        android:title="Gestionar Usuarios" />
-
+        android:title="Gestionar Usuarios"
+        android:icon="@android:drawable/ic_menu_myplaces" />
 
     <item
         android:id="@+id/nav_logout"
-        android:title="Cerrar Sesión" />
+        android:title="Cerrar Sesión"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel" />
 
 </menu>
-

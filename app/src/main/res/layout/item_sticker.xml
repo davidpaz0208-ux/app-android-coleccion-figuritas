@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_bg_common"
+    android:elevation="10dp">
+
+    <TextView
+        android:id="@+id/stickerRarity"
+        android:text="LEGEND"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_gravity="end"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="#55000000"/>
+
+    <TextView
+        android:id="@+id/stickerNumber"
+        android:text="#10"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#DDDDDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/stickerPlayer"
+        android:text="MESSI"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/stickerTeam"
+        android:text="Argentina"
+        android:textSize="16sp"
+        android:textColor="#CCCCCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:text="$0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#00FF00"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/stickerRepeated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ÚNICA"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprar"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnTrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cambiar"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

@@ -1,67 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@android:color/black">
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/tvTimestamp"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarChat"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Chat de Intercambio"
+            app:titleTextColor="@android:color/white" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinnerUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"/>
+
+            <ListView
+                android:id="@+id/listViewChat"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:dividerHeight="8dp"/>
+
+            <Button
+                android:id="@+id/btnOfferSticker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ofrecer figurita"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Ej: Tengo repetida la N° 10"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="4dp"
-        android:text="Último mensaje a las: 00:00"
-        android:textColorHint="#FFFFFF"/>
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/white"
+        app:menu="@menu/drawer_menu"/>
 
-    <ListView
-        android:id="@+id/listViewMessages"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:textSize="24sp"
-        android:layout_weight="1" />
-
-    <EditText
-        android:id="@+id/editTextMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:hint="Escribe tu mensaje..."
-        android:textColorHint="#FFFFFF"
-        android:textColor="#FFFFFF" />
-
-    <Button
-        android:id="@+id/btnSendMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:text="Enviar"
-        android:textSize="22sp"
-        android:layout_marginTop="36sp"
-        android:background="@drawable/button_background" />
-
-    <Button
-        android:id="@+id/btnClearChatHistory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:text="Borrar historial"
-        android:textSize="22sp"
-        android:layout_marginTop="36sp"
-        android:visibility="gone"
-        android:background="@drawable/button_background" />
-
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:text="Volver"
-        android:textSize="22sp"
-        android:layout_marginTop="36sp"
-        android:background="@drawable/button_background" />
-
-</LinearLayout>
-
+</androidx.drawerlayout.widget.DrawerLayout>
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Players</string>
+    <string name="app_name">Figuritas</string>
 
     <string name="login_hint_username">Username</string>
     <string name="login_hint_password">Password</string>

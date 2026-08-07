@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jugador"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/textWhite"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número: 0"
+            android:textSize="20sp"
+            android:textColor="@color/backgroundLightGray"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equipo: -"
+            android:textSize="18sp"
+            android:textColor="@color/textWhite"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvRarity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rareza: Common"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textWhite"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:background="@drawable/button_background"
+            android:textColor="@color/textWhite"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acción"
+            android:background="@drawable/button_background"
+            android:textColor="@color/textWhite"/>
+
+    </LinearLayout>
+</ScrollView>

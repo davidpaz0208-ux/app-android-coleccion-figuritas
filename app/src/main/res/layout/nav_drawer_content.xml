@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
@@ -22,10 +23,10 @@
         android:padding="16dp">
 
         <Button
-            android:id="@+id/btnViewPlayers"
+            android:id="@+id/btnViewStickers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ver jugadores"
+            android:text="Ver figuritas"
             android:textColor="#FFFFFF"
             android:background="?attr/selectableItemBackground"
             android:textAllCaps="false"
@@ -33,10 +34,10 @@
             android:layout_marginBottom="8dp" />
 
         <Button
-            android:id="@+id/btnAddPlayer"
+            android:id="@+id/btnAlbum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Agregar jugador"
+            android:text="📘 Álbum"
             android:textColor="#FFFFFF"
             android:background="?attr/selectableItemBackground"
             android:textAllCaps="false"
@@ -44,10 +45,10 @@
             android:layout_marginBottom="8dp" />
 
         <Button
-            android:id="@+id/btnUpdatePlayerPosition"
+            android:id="@+id/btnAddSticker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Actualizar posición jugador"
+            android:text="Agregar figurita"
             android:textColor="#FFFFFF"
             android:background="?attr/selectableItemBackground"
             android:textAllCaps="false"
@@ -55,10 +56,10 @@
             android:layout_marginBottom="8dp" />
 
         <Button
-            android:id="@+id/btnEditPlayerName"
+            android:id="@+id/btnUpdateSticker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Editar nombre jugador"
+            android:text="Actualizar figurita"
             android:textColor="#FFFFFF"
             android:background="?attr/selectableItemBackground"
             android:textAllCaps="false"
@@ -66,10 +67,21 @@
             android:layout_marginBottom="8dp" />
 
         <Button
-            android:id="@+id/btnDeletePlayer"
+            android:id="@+id/btnEditStickerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Eliminar jugador"
+            android:text="Editar nombre figurita"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnDeleteSticker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar figurita"
             android:textColor="#FFFFFF"
             android:background="?attr/selectableItemBackground"
             android:textAllCaps="false"
@@ -112,7 +124,6 @@
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
-
 
 
 
