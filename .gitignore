@@ -1,18 +1,25 @@
+# Android Studio / IntelliJ
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.idea/
+
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Configuración local
 local.properties
-.idea/inspectionProfiles/
-.idea/studiobot.xml
-gradle/gradle-daemon-jvm.properties
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# Capturas
+captures/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Gradle JVM
+/gradle/gradle-daemon-jvm.properties
